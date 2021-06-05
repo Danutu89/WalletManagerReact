@@ -1,0 +1,19 @@
+@keyframes :global(rotate) {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.circle :global {
+	height: 40px;
+	width: 40px;
+	border-color: coral transparent coral coral;
+	border-width: calc(40px / 12);
+	border-style: solid;
+	border-image: initial;
+	border-radius: 50%;
+	animation: 0.75s linear 0s infinite normal none running rotate;
+}

@@ -1,0 +1,23 @@
+.transfer {
+	display: flex;
+	flex-flow: column;
+
+	padding: 0.8rem 1.6rem;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(209, 209, 209);
+	box-shadow: 1px 2px 2px 1px #0000000f;
+	border-radius: 6px;
+	margin-bottom: 0.5rem;
+	min-width: fit-content;
+	max-width: 100%;
+	height: fit-content;
+
+	.actions {
+		display: flex;
+		flex-flow: row-reverse;
+	}
+
+	.error {
+		color: crimson;
+	}
+}

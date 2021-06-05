@@ -1,0 +1,27 @@
+.navbar {
+	display: flex;
+	flex-flow: row;
+	height: 50px;
+	width: calc(100vw);
+	background-color: black;
+	padding: 0.4rem;
+	box-sizing: border-box;
+
+	.right {
+		margin-inline-start: auto;
+		display: flex;
+		flex-flow: row;
+	}
+
+	& .item {
+		margin: 0 0.2rem;
+	}
+
+	& .item:first-child {
+		margin-left: 0rem;
+	}
+
+	& .item:last-child {
+		margin-right: 0rem;
+	}
+}

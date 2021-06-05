@@ -1,0 +1,16 @@
+.token {
+	display: flex;
+	flex-flow: row;
+	padding: 0.4rem 0;
+
+	.icon {
+		margin-right: 0.5rem;
+
+		.symbol {
+			font-size: 2rem;
+		}
+	}
+	.balance {
+		line-height: 1.9;
+	}
+}

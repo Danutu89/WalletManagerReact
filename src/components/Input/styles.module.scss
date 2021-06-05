@@ -1,0 +1,19 @@
+.input {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(209, 209, 209);
+	border-radius: 6px;
+	padding: 0.1rem 0.2rem;
+	width: calc(100% - 0.4rem);
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+
+	input {
+		border: none;
+		background-color: transparent;
+		width: 100%;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}

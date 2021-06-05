@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-flow: row;
+	width: fit-content;
+	margin: 0 auto;
+	height: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+
+	& > div {
+		margin-right: 1rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.wallet {
+		margin-top: 2rem;
+		width: 300px;
+	}
+
+	.transfer {
+		margin-top: 2rem;
+		width: 300px;
+	}
+
+	/* width */
+}

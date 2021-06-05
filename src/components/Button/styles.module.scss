@@ -1,0 +1,22 @@
+.button {
+	cursor: pointer;
+	padding: 0.2rem 0.6rem;
+	background-color: dodgerblue;
+	color: white;
+	border: 1px solid darken($color: dodgerblue, $amount: 2);
+	border-radius: 6px;
+	font-weight: 700;
+	cursor: pointer;
+
+	&:hover {
+		background-color: lighten($color: dodgerblue, $amount: 5);
+	}
+
+	&:active {
+		background-color: darken($color: dodgerblue, $amount: 2);
+	}
+
+	&.fluid {
+		width: 100%;
+	}
+}

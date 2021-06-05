@@ -1,0 +1,14 @@
+.item {
+	padding: 0.2rem 0.8rem;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+	&:hover {
+		background-color: rgb(49, 49, 49);
+	}
+}

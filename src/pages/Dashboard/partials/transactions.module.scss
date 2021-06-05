@@ -1,0 +1,41 @@
+.transactions {
+	position: relative;
+	height: 100%;
+
+	&.loading {
+		min-width: 600px;
+		height: 100%;
+		& > .list {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.shadow {
+		box-shadow: inset 0px 18px 10px -10px rgb(167, 167, 167),
+			inset 0px -18px 10px -10px rgb(167, 167, 167);
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: calc(100% - 1.2rem);
+		margin: 0 auto;
+		pointer-events: none;
+	}
+
+	.list {
+		height: 100%;
+		overflow: hidden auto;
+		padding: 0 0.8rem;
+
+		&.minimal {
+			overflow: auto;
+			height: auto;
+			padding: 1rem 0;
+		}
+	}
+}

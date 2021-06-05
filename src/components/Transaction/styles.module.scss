@@ -1,0 +1,95 @@
+.transaction {
+	display: flex;
+	flex-flow: row;
+	padding: 0.2rem 0.4rem;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(209, 209, 209);
+	box-shadow: 1px 2px 2px 1px #0000000f;
+	border-radius: 6px;
+	margin-bottom: 0.5rem;
+	width: fit-content;
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgb(248, 248, 248);
+	}
+
+	& > div {
+		margin-left: 0.5rem;
+	}
+
+	.icon {
+		margin: auto 0.5rem;
+		width: 50px;
+		text-align: center;
+
+		border-radius: 5px;
+		background-color: black;
+		color: white;
+		padding: 0.15rem 0.4rem 0.2rem 0.4rem;
+		font-size: 1rem;
+		text-align: center;
+		font-weight: 700;
+
+		&.out {
+			background-color: crimson;
+		}
+
+		&.in {
+			background-color: forestgreen;
+		}
+	}
+
+	.data {
+		display: flex;
+		flex-flow: column;
+		padding: 0.2rem 0.4rem;
+
+		.address {
+			font-weight: 700;
+			margin-bottom: 0.3rem;
+		}
+
+		.amount {
+			display: flex;
+			flex-flow: row;
+			.name {
+				border-radius: 5px;
+				background-color: coral;
+				color: white;
+				padding: 0.05rem 0.4rem 0.1rem 0.4rem;
+				font-size: 0.6rem;
+				text-align: center;
+				font-weight: 700;
+				margin: auto 0.5rem auto 0;
+			}
+
+			.value {
+				font-size: 0.8rem;
+			}
+		}
+	}
+
+	.status {
+		border-radius: 5px;
+		background-color: black;
+		color: white;
+		padding: 0.05rem 0.4rem 0.1rem 0.4rem;
+		font-size: 0.7rem;
+		text-align: center;
+		font-weight: 700;
+		margin: auto 0.5rem auto 1rem;
+
+		&.pending {
+			background-color: coral;
+		}
+
+		&.rejected {
+			background-color: crimson;
+		}
+
+		&.complete {
+			background-color: forestgreen;
+		}
+	}
+}

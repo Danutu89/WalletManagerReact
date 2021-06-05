@@ -1,0 +1,20 @@
+.main {
+	display: flex;
+	flex-flow: column;
+	height: calc(100% - 50px);
+
+	.frame {
+		margin: auto;
+		padding: 2rem;
+		border: 1px solid black;
+		border-radius: 6px;
+
+		h1 {
+			margin-top: 0;
+		}
+
+		& > * {
+			margin-bottom: 0.4rem;
+		}
+	}
+}

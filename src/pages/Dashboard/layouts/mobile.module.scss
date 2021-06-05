@@ -1,0 +1,18 @@
+.container {
+	display: flex;
+	flex-flow: column;
+	width: fit-content;
+	margin: 0 auto;
+	height: 100%;
+	max-width: 100%;
+
+	.wallet {
+		margin-top: 2rem;
+		width: 100%;
+	}
+
+	.transfer {
+		margin-top: 2rem;
+		width: 100%;
+	}
+}
